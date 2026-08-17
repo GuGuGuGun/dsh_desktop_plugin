@@ -1,6 +1,6 @@
 # DeepSeek Harness Desktop 插件
 
-这个树外 bundle 把 DeepSeek Harness 自带的 Web UI 放进一个受限的 Electron 窗口。它不复制、不修改上游源码；Harness 仍负责 agent、会话、模型、工具、权限与持久化，插件只负责桌面窗口生命周期。
+本插件将 DeepSeek Harness 自带的 Web UI 放进一个受限的 Electron 窗口。它不复制、不修改上游源码；Harness 仍负责 agent、会话、模型、工具、权限与持久化，插件只负责桌面窗口生命周期。
 
 ## 要求
 
