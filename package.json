@@ -1,0 +1,44 @@
+{
+  "name": "dsh-plugin-desktop",
+  "version": "0.1.0",
+  "description": "Out-of-tree Electron desktop shell for DeepSeek Harness",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./desktop-main": "./desktop/main.cjs",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "index.js",
+    "desktop",
+    "docs",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check index.js && node --check desktop/main.cjs && node --check desktop/preload.cjs && node --test"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.1",
+    "electron": "43.4.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/dsh": "0.1.0-rc.6"
+  }
+}

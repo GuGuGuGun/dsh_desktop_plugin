@@ -1,0 +1,5 @@
+{
+  "name": "dsh-desktop-window",
+  "private": true,
+  "main": "main.cjs"
+}

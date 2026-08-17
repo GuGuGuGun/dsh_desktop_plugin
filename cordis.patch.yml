@@ -1,0 +1,5 @@
+# Install this bundle into the built-in `web` profile. The plugin waits for the
+# Web runtime and opens that same local UI in a sandboxed Electron window.
+- insert:
+    - id: desktop-shell
+      name: dsh-plugin-desktop
